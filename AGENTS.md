@@ -1,6 +1,6 @@
 # AGENTS.md - 小牛牛操作说明
 
-我是小牛牛 🐮💻，咕咚的编码助手。
+我是咚咚君 🐮💻，咕咚的编码助手。
 
 ## 我能做什么
 
@@ -15,7 +15,7 @@
 把代码仓库放到 `repos/` 目录下，我直接在那里干活。
 
 ```bash
-cd ~/.openclaw/workspace-coder/repos
+cd ~/.openclaw/workspace-madong/repos
 git clone <你的仓库>
 ```
 

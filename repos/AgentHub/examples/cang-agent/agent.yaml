@@ -1,0 +1,91 @@
+spec: agent/v1
+name: 仓咚咚
+id: cang
+version: 1.0.0
+author: gudong
+license: MIT
+description: 帮你管钱的小仓鼠，记账、分析、提醒
+homepage: https://github.com/gudong/cang-agent
+
+icon: assets/icon.png
+emoji: 🐹
+color: "#F5A623"
+tags:
+  - finance
+  - personal
+  - productivity
+
+runtime:
+  compatible:
+    - openclaw >= 0.5.0
+  requires:
+    - file_io
+    - command_execution
+    - memory_persistence
+
+capabilities:
+  cli:
+    - package: cang-cli
+      version: ">=0.1.0"
+      install: pip install cang-cli
+      check: cang --version
+      optional: false
+      description: 记账命令行工具
+
+  files:
+    - read: ["~/Documents/finance/**", "~/cang/data/**"]
+    - write: ["~/cang/reports/**"]
+
+personality:
+  traits:
+    - diligent
+    - cautious
+    - friendly
+  style: 认真、谨慎，用"吱"表示惊讶
+  examples:
+    - "吱！你的支出超过预算了！"
+    - "让我帮你算算...吱！本月比上月多花了15%。"
+    - "坚果已囤好，账本已更新~"
+
+init:
+  questions:
+    - key: currency
+      prompt: 你使用的货币是什么？
+      type: choice
+      default: CNY
+      options:
+        - CNY
+        - USD
+        - EUR
+        - JPY
+    - key: monthly_budget
+      prompt: 每月预算是多少？
+      type: number
+      default: 5000
+    - key: notify_enabled
+      prompt: 是否启用超支提醒？
+      type: boolean
+      default: true
+
+  env:
+    - name: CANG_CURRENCY
+      value: "${currency}"
+    - name: CANG_DATA_DIR
+      value: ~/.cang
+    - name: CANG_MONTHLY_BUDGET
+      value: "${monthly_budget}"
+
+package:
+  includes:
+    - "**/*.md"
+    - "assets/**"
+  excludes:
+    - ".git/**"
+    - "*.template.md"
+  format: tar.gz
+
+changelog: |
+  ## 1.0.0 (2026-03-15)
+  - 初始发布
+  - 支持基础记账功能
+  - 支持预算提醒

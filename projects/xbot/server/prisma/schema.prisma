@@ -1,0 +1,36 @@
+# Prisma Schema for XBot
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Bot {
+  id        Int      @id @default(autoincrement())
+  deviceId  String   @map("device_id")
+  name      String
+  token     String   @unique
+  agentId   String?  @map("agent_id")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  
+  messages Message[]
+
+  @@map("bots")
+}
+
+model Message {
+  id        Int      @id @default(autoincrement())
+  botId     Int      @map("bot_id")
+  role      String   // "user" or "assistant"
+  content   String
+  createdAt DateTime @default(now()) @map("created_at")
+  
+  bot Bot @relation(fields: [botId], references: [id], onDelete: Cascade)
+
+  @@map("messages")
+}
