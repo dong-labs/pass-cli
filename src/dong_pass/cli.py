@@ -37,3 +37,15 @@ def main(
 
 if __name__ == "__main__":
     app()
+
+@app.command()
+def export(output: str = typer.Option("pass.json", "-o", "--output"), format: str = typer.Option("json", "-f", "--format")):
+    """导出数据"""
+    from .commands.export import export as do_export
+    do_export(output, format)
+
+@app.command(name="import")
+def import_data(file: str = typer.Option(..., "-f", "--file"), merge: bool = typer.Option(False, "--merge"), dry_run: bool = typer.Option(False, "--dry-run")):
+    """导入数据"""
+    from .commands.data_import import import_data as do_import
+    do_import(file, merge, dry_run)
