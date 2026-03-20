@@ -1,0 +1,2 @@
+[console_scripts]
+dong-pass = dong_pass.cli:app
