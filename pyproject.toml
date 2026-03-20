@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "dong-pass"
-version = "0.1.1"
+name = "pass-cli"
+version = "0.1.2"
 description = "密码咚 - 账号密码管理 CLI"
 readme = "README.md"
 requires-python = ">=3.11"
