@@ -22,7 +22,7 @@ class Database:
     子类需要实现：
     - get_name(): 返回 CLI 名称
 
-    数据库路径: ~/.dong/<name>.db
+    数据库路径: ~/.dong/<name>/<name>.db
     """
 
     _connection: Optional[sqlite3.Connection] = None
@@ -38,10 +38,19 @@ class Database:
         return DONG_DIR
 
     @classmethod
-    def get_db_path(cls) -> Path:
-        """获取数据库文件路径"""
+    def get_module_dir(cls) -> Path:
+        """获取模块目录 ~/.dong/<name>/"""
         name = cls.get_name()
-        return DONG_DIR / f"{name}.db"
+        module_dir = DONG_DIR / name
+        module_dir.mkdir(parents=True, exist_ok=True)
+        return module_dir
+
+    @classmethod
+    def get_db_path(cls) -> Path:
+        """获取数据库文件路径 ~/.dong/<name>/<name>.db"""
+        name = cls.get_name()
+        module_dir = cls.get_module_dir()
+        return module_dir / f"{name}.db"
     
     @classmethod
     def get_connection(cls) -> sqlite3.Connection:
