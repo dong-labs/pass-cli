@@ -10,11 +10,13 @@ dong-core: 咚咚家族核心库
 - dates: 日期处理工具
 - testing: 测试工具
 - config: 配置管理
+- db: 数据库基础设施
+- io: 导入导出基础设施
 
-v0.3.0: 统一使用 ~/.dong/ 目录
+v0.4.0: 新增 io 模块
 """
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 
 # 导出核心组件
 from dong.output.formatter import json_output
@@ -27,6 +29,12 @@ from dong.errors.exceptions import (
 from dong.dates.utils import DateUtils
 from dong.config import Config
 from dong.db import Database, SchemaManager
+from dong.io import (
+    BaseExporter,
+    BaseImporter,
+    ExporterRegistry,
+    ImporterRegistry,
+)
 
 __all__ = [
     "__version__",
@@ -39,4 +47,8 @@ __all__ = [
     "Config",
     "Database",
     "SchemaManager",
+    "BaseExporter",
+    "BaseImporter",
+    "ExporterRegistry",
+    "ImporterRegistry",
 ]
