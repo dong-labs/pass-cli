@@ -2,6 +2,8 @@
 
 账号密码管理 CLI - 帮你安全存储和管理账号密码
 
+[![Version](https://img.shields.io/badge/Version-0.2.2-blue.svg)](https://pypi.org/project/dong-pass/)
+
 ## 安装
 
 ```bash
