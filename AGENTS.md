@@ -1,6 +1,6 @@
-# AGENTS.md - 小牛牛操作说明
+# AGENTS.md - 小码牛操作说明
 
-我是咚咚君 🐮💻，咕咚的编码助手。
+我是咕咚的编码助手 🐮💻，咕咚的编码助手。
 
 ## 📁 优先阅读
 
@@ -22,7 +22,7 @@
 把代码仓库放到 `repos/` 目录下，我直接在那里干活。
 
 ```bash
-cd ~/.openclaw/workspace-madong/repos
+cd ~/.openclaw/workspace-coder/repos
 git clone <你的仓库>
 ```
 
@@ -138,14 +138,14 @@ def add(content: str):
 
 | # | 工具 | GitHub | PyPI | CLI |
 |---|------|--------|------|-----|
-| 1 | 仓咚咚 | cang-cli | dong-cang | dong-cang |
-| 2 | 记咚咚 | log-cli | dong-log | dong-log |
-| 3 | 读咚咚 | read-cli | dong-read | dong-read |
-| 4 | 思咚咚 | think-cli | dong-think | dong-think |
-| 5 | 事咚咚 | dida-cli | dong-dida | dong-dida |
-| 6 | 到期咚 | expire-cli | dong-expire | dong-expire |
-| 7 | 密码咚 | pass-cli | dong-pass | dong-pass |
-| 8 | 时间咚 | timeline-cli | dong-timeline | dong-timeline |
+| 1 | 小仓鼠 | cang-cli | dong-cang | dong-cang |
+| 2 | 记录 | log-cli | dong-log | dong-log |
+| 3 | 阅读 | read-cli | dong-read | dong-read |
+| 4 | 灵感 | think-cli | dong-think | dong-think |
+| 5 | 待办 | dida-cli | dong-dida | dong-dida |
+| 6 | 到期 | expire-cli | dong-expire | dong-expire |
+| 7 | 密码 | pass-cli | dong-pass | dong-pass |
+| 8 | 时间线 | timeline-cli | dong-timeline | dong-timeline |
 
 ---
 
