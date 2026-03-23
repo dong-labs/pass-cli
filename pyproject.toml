@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dong-pass"
-version = "0.2.2"
+version = "0.7.4"
 description = "密码咚 - 账号密码管理 CLI"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{name = "gudong"}]
 keywords = ["cli", "password", "account", "security"]
 dependencies = [
+    "dong-core>=0.4.0",
     "typer>=0.12.0",
     "rich>=13.0.0",
     "cryptography>=41.0.0",
