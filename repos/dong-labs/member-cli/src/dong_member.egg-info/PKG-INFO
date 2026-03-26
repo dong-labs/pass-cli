@@ -1,0 +1,119 @@
+Metadata-Version: 2.4
+Name: dong-member
+Version: 0.1.1
+Summary: 会员咚 - 会员管理 CLI
+Author: gudong
+Keywords: cli,member,subscription,management
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer>=0.12.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: dong-core>=0.4.0
+Requires-Dist: python-dateutil>=2.8.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Dynamic: license-file
+
+# 会员咚 (dong-member)
+
+会员管理 CLI 工具，用于管理 AI 咚力圈等付费项目的会员信息。
+
+## 安装
+
+```bash
+pipx install dong-member
+```
+
+## 初始化
+
+```bash
+dong-member init
+```
+
+## 使用示例
+
+### 添加会员
+
+```bash
+# 年费会员（默认）
+dong-member add "张三" --wechat "zhangsan123" --project "donglijuan" --price 499
+
+# 永久会员
+dong-member add "李四" --wechat "lisi456" --type lifetime --project "donglijuan" --price 999
+
+# 带账号 ID
+dong-member add "王五" --wechat "wangwu789" --account "user_001" --project "inbox" --price 299
+```
+
+### 查看会员
+
+```bash
+# 查看所有会员
+dong-member list
+
+# 按项目筛选
+dong-member list --project donglijuan
+
+# 按类型筛选
+dong-member list --type lifetime
+```
+
+### 统计
+
+```bash
+# 统计所有项目
+dong-member stats
+
+# 按项目统计
+dong-member stats --project donglijuan
+```
+
+### 提醒
+
+```bash
+# 查看 7 天内到期的会员
+dong-member remind --days 7
+
+# 按项目筛选
+dong-member remind --project donglijuan --days 30
+```
+
+### 续费
+
+```bash
+# 续费 12 个月
+dong-member renew 1 --months 12 --price 499
+```
+
+### 搜索
+
+```bash
+dong-member search "张三"
+```
+
+## 功能特性
+
+- ✅ 多项目支持（donglijuan、inbox 等）
+- ✅ 会员类型（年费/永久）
+- ✅ 账号 ID 管理
+- ✅ 到期提醒
+- ✅ 续费记录
+- ✅ 收入统计
+- ✅ JSON 输出（AI 友好）
+
+## 数据存储
+
+数据存储在 `~/.dong/member.db`
+
+## 开发
+
+```bash
+cd ~/.openclaw/workspace-coder/repos/dong-labs/member-cli
+pipx install . --force
+```
+
+## License
+
+MIT

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dong-member"
+version = "0.1.1"
+description = "会员咚 - 会员管理 CLI"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "gudong"}]
+keywords = ["cli", "member", "subscription", "management"]
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.0.0",
+    "dong-core>=0.4.0",
+    "python-dateutil>=2.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+dong-member = "member.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/member"]
