@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "repos": {
+    "ThinkPlus": {
+      "name": "inBox App (Android)",
+      "path": "repos/ThinkPlus",
+      "github": "maoruibin/ThinkPlus",
+      "labels": ["inBox App", "app"],
+      "skills": ["analyze-issue", "new-task", "pre-release-scan"],
+      "branch": {
+        "develop": "develop",
+        "main": "main"
+      },
+      "tools": {
+        "build": "./tools/dev.sh air inbox",
+        "test": "./gradlew testInboxDebugUnitTest"
+      }
+    },
+    "thinkflutter": {
+      "name": "inBox PC版 (Flutter)",
+      "path": "repos/thinkflutter",
+      "github": "maoruibin/thinkflutter",
+      "labels": ["inBox PC版", "pc"],
+      "skills": ["analyze-issue", "new-task"],
+      "branch": {
+        "develop": "develop",
+        "main": "main"
+      },
+      "tools": {
+        "build": "flutter build",
+        "test": "flutter test"
+      }
+    }
+  },
+  "labelMapping": {
+    "bug": "fix",
+    "enhancement": "feat",
+    "feature": "feat",
+    "documentation": "docs",
+    "性能": "perf",
+    "refactor": "refactor"
+  },
+  "priorityMapping": {
+    "P0": "紧急",
+    "P1": "高",
+    "P2": "正常",
+    "P3": "低"
+  },
+  "workflow": {
+    "issueAnalysis": "analyze-issue",
+    "taskCreation": "new-task",
+    "versionPlanning": "start-version",
+    "releaseCheck": "pre-release-scan"
+  },
+  "dispatchRules": [
+    {
+      "condition": "label:inBox App OR label:app",
+      "dispatchTo": "coder",
+      "repo": "ThinkPlus"
+    },
+    {
+      "condition": "label:inBox PC版 OR label:pc",
+      "dispatchTo": "coder", 
+      "repo": "thinkflutter"
+    }
+  ]
+}

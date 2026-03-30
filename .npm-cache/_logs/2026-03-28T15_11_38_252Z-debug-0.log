@@ -1,0 +1,80 @@
+0 verbose cli /Users/gudong/.nvm/versions/node/v22.22.0/bin/node /Users/gudong/.nvm/versions/node/v22.22.0/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@10.9.4
+2 info using node@v22.22.0
+3 silly config load:file:/Users/gudong/.nvm/versions/node/v22.22.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/gudong/.openclaw/workspace-coder/.npmrc
+5 silly config load:file:/Users/gudong/.npmrc
+6 silly config load:file:/Users/gudong/.nvm/versions/node/v22.22.0/etc/npmrc
+7 verbose title npm exec @tencent-weixin/openclaw-weixin-cli@latest install
+8 verbose argv "exec" "--yes" "--" "@tencent-weixin/openclaw-weixin-cli@latest" "install"
+9 verbose logfile logs-max:10 dir:/Users/gudong/.openclaw/workspace-coder/.npm-cache/_logs/2026-03-28T15_11_38_252Z-
+10 verbose logfile /Users/gudong/.openclaw/workspace-coder/.npm-cache/_logs/2026-03-28T15_11_38_252Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 http fetch GET 200 https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin-cli 272ms (cache miss)
+14 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+15 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+16 silly idealTree buildDeps
+17 silly fetch manifest @tencent-weixin/openclaw-weixin-cli@2.1.1
+18 silly packumentCache full:https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin-cli cache-miss
+19 http fetch GET 200 https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin-cli 47ms (cache miss)
+20 silly packumentCache full:https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin-cli set size:5586 disposed:false
+21 silly fetch manifest openclaw@>=2026.3.0
+22 silly packumentCache full:https://registry.npmmirror.com/openclaw cache-miss
+23 http fetch GET 200 https://registry.npmmirror.com/openclaw 149ms (cache miss)
+24 silly packumentCache full:https://registry.npmmirror.com/openclaw set size:185779 disposed:false
+25 silly fetch manifest @napi-rs/canvas@^0.1.89
+26 silly packumentCache full:https://registry.npmmirror.com/@napi-rs%2fcanvas cache-miss
+27 http fetch GET 200 https://registry.npmmirror.com/@napi-rs%2fcanvas 127ms (cache miss)
+28 silly packumentCache full:https://registry.npmmirror.com/@napi-rs%2fcanvas set size:81036 disposed:false
+29 silly fetch manifest node-llama-cpp@3.18.1
+30 silly packumentCache full:https://registry.npmmirror.com/node-llama-cpp cache-miss
+31 http fetch GET 200 https://registry.npmmirror.com/node-llama-cpp 120ms (cache miss)
+32 silly packumentCache full:https://registry.npmmirror.com/node-llama-cpp set size:93237 disposed:false
+33 silly fetch manifest typescript@>=5.0.0
+34 silly packumentCache full:https://registry.npmmirror.com/typescript cache-miss
+35 http fetch GET 200 https://registry.npmmirror.com/typescript 1983ms (cache miss)
+36 silly packumentCache full:https://registry.npmmirror.com/typescript set size:1684405 disposed:false
+37 silly placeDep ROOT @tencent-weixin/openclaw-weixin-cli@2.1.1 OK for:  want: 2.1.1
+38 silly reify moves {}
+39 silly audit bulk request { '@tencent-weixin/openclaw-weixin-cli': [ '2.1.1' ] }
+40 http cache @tencent-weixin/openclaw-weixin-cli@https://registry.npmmirror.com/@tencent-weixin/openclaw-weixin-cli/-/openclaw-weixin-cli-2.1.1.tgz 0ms (cache hit)
+41 silly tarball no local data for @tencent-weixin/openclaw-weixin-cli@https://registry.npmmirror.com/@tencent-weixin/openclaw-weixin-cli/-/openclaw-weixin-cli-2.1.1.tgz. Extracting by manifest.
+42 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 45ms
+43 silly audit bulk request failed [object Object]
+44 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/audits/quick 27ms
+45 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/audits/quick - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+45 verbose audit error     at /Users/gudong/.nvm/versions/node/v22.22.0/lib/node_modules/npm/node_modules/npm-registry-fetch/lib/check-response.js:103:15
+45 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+45 verbose audit error     at async [getReport] (/Users/gudong/.nvm/versions/node/v22.22.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/audit-report.js:336:21)
+45 verbose audit error     at async AuditReport.run (/Users/gudong/.nvm/versions/node/v22.22.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/audit-report.js:106:19) {
+45 verbose audit error   headers: [Object: null prototype] {
+45 verbose audit error     server: [ 'Tengine' ],
+45 verbose audit error     date: [ 'Sat, 28 Mar 2026 15:11:42 GMT' ],
+45 verbose audit error     'content-type': [ 'application/json' ],
+45 verbose audit error     'transfer-encoding': [ 'chunked' ],
+45 verbose audit error     connection: [ 'keep-alive' ],
+45 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+45 verbose audit error     via: [ 'kunlun7.cn6489[,404666]' ],
+45 verbose audit error     'timing-allow-origin': [ '*' ],
+45 verbose audit error     eagleid: [ '3d30538c17747107020975650e' ],
+45 verbose audit error     'x-fetch-attempts': [ '1' ]
+45 verbose audit error   },
+45 verbose audit error   statusCode: 404,
+45 verbose audit error   code: 'E404',
+45 verbose audit error   method: 'POST',
+45 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/audits/quick',
+45 verbose audit error   body: {
+45 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+45 verbose audit error   },
+45 verbose audit error   pkgid: undefined
+45 verbose audit error }
+46 silly audit error [object Object]
+47 silly audit report null
+48 http fetch GET 200 https://cdn.npmmirror.com/packages/%40tencent-weixin/openclaw-weixin-cli/2.1.1/openclaw-weixin-cli-2.1.1.tgz 502ms (cache miss)
+49 verbose cwd /Users/gudong/.openclaw/workspace-coder
+50 verbose os Darwin 24.6.0
+51 verbose node v22.22.0
+52 verbose npm  v10.9.4
+53 verbose exit 1
+54 verbose code 1

@@ -1,0 +1,76 @@
+0 verbose cli /Users/gudong/.nvm/versions/node/v22.22.0/bin/node /Users/gudong/.nvm/versions/node/v22.22.0/bin/npm
+1 info using npm@10.9.4
+2 info using node@v22.22.0
+3 silly config load:file:/Users/gudong/.nvm/versions/node/v22.22.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/gudong/.openclaw/workspace-coder/.npmrc
+5 silly config load:file:/Users/gudong/.npmrc
+6 silly config load:file:/Users/gudong/.nvm/versions/node/v22.22.0/etc/npmrc
+7 verbose title npm pack @tencent-weixin/openclaw-weixin@latest
+8 verbose argv "pack" "@tencent-weixin/openclaw-weixin@latest"
+9 verbose logfile logs-max:10 dir:/Users/gudong/.openclaw/workspace-coder/.npm-cache/_logs/2026-03-28T15_11_56_908Z-
+10 verbose logfile /Users/gudong/.openclaw/workspace-coder/.npm-cache/_logs/2026-03-28T15_11_56_908Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http cache https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin 6ms (cache hit)
+13 http cache https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin 2ms (cache hit)
+14 http cache https://registry.npmmirror.com/@tencent-weixin/openclaw-weixin/-/openclaw-weixin-2.1.1.tgz 0ms (cache hit)
+15 notice
+16 notice 📦  @tencent-weixin/openclaw-weixin@2.1.1
+17 notice Tarball Contents
+18 notice 130B CHANGELOG.md
+18 notice 90B CHANGELOG.zh_CN.md
+18 notice 1.1kB LICENSE
+18 notice 8.8kB README.md
+18 notice 8.2kB README.zh_CN.md
+18 notice 1.3kB index.ts
+18 notice 190B openclaw.plugin.json
+18 notice 1.3kB package.json
+18 notice 9.9kB src/api/api.ts
+18 notice 2.5kB src/api/config-cache.ts
+18 notice 1.9kB src/api/session-guard.ts
+18 notice 5.7kB src/api/types.ts
+18 notice 13.4kB src/auth/accounts.ts
+18 notice 11.4kB src/auth/login-qr.ts
+18 notice 4.1kB src/auth/pairing.ts
+18 notice 877B src/cdn/aes-ecb.ts
+18 notice 3.4kB src/cdn/cdn-upload.ts
+18 notice 830B src/cdn/cdn-url.ts
+18 notice 3.5kB src/cdn/pic-decrypt.ts
+18 notice 5.2kB src/cdn/upload.ts
+18 notice 17.7kB src/channel.ts
+18 notice 2.6kB src/compat.ts
+18 notice 741B src/config/config-schema.ts
+18 notice 5.9kB src/media/media-download.ts
+18 notice 2.5kB src/media/mime.ts
+18 notice 2.3kB src/media/silk-transcode.ts
+18 notice 2.0kB src/messaging/debug-mode.ts
+18 notice 1.0kB src/messaging/error-notice.ts
+18 notice 9.5kB src/messaging/inbound.ts
+18 notice 18.1kB src/messaging/process-message.ts
+18 notice 2.7kB src/messaging/send-media.ts
+18 notice 8.3kB src/messaging/send.ts
+18 notice 3.3kB src/messaging/slash-commands.ts
+18 notice 8.3kB src/monitor/monitor.ts
+18 notice 2.2kB src/runtime.ts
+18 notice 331B src/storage/state-dir.ts
+18 notice 2.7kB src/storage/sync-buf.ts
+18 notice 4.3kB src/util/logger.ts
+18 notice 562B src/util/random.ts
+18 notice 1.9kB src/util/redact.ts
+18 notice 722B src/vendor.d.ts
+18 notice 1.5kB src/weixin-cli.ts
+19 notice Tarball Details
+20 notice name: @tencent-weixin/openclaw-weixin
+21 notice version: 2.1.1
+22 notice filename: tencent-weixin-openclaw-weixin-2.1.1.tgz
+23 notice package size: 52.4 kB
+24 notice unpacked size: 182.9 kB
+25 notice shasum: 574c53a912986bc6b97ae672c1af0327f8be2fcb
+26 notice integrity: sha512-lSiTI+9eQQuvZ[...]kLtG0EVo2E7Ag==
+27 notice total files: 42
+28 notice
+29 verbose cwd /Users/gudong/.openclaw/workspace-coder
+30 verbose os Darwin 24.6.0
+31 verbose node v22.22.0
+32 verbose npm  v10.9.4
+33 verbose exit 0
+34 info ok

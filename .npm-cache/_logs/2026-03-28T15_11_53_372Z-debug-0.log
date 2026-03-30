@@ -1,0 +1,50 @@
+0 verbose cli /Users/gudong/.nvm/versions/node/v22.22.0/bin/node /Users/gudong/.nvm/versions/node/v22.22.0/bin/npm
+1 info using npm@10.9.4
+2 info using node@v22.22.0
+3 silly config load:file:/Users/gudong/.nvm/versions/node/v22.22.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/gudong/.npmrc
+5 silly config load:file:/Users/gudong/.nvm/versions/node/v22.22.0/etc/npmrc
+6 verbose title npm install @tencent-weixin/openclaw-weixin@latest
+7 verbose argv "install" "--global" "@tencent-weixin/openclaw-weixin@latest"
+8 verbose logfile logs-max:10 dir:/Users/gudong/.openclaw/workspace-coder/.npm-cache/_logs/2026-03-28T15_11_53_372Z-
+9 verbose logfile /Users/gudong/.openclaw/workspace-coder/.npm-cache/_logs/2026-03-28T15_11_53_372Z-debug-0.log
+10 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+11 silly logfile done cleaning log files
+12 silly packumentCache corgi:https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin cache-miss
+13 http fetch GET 200 https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin 194ms (cache miss)
+14 silly packumentCache corgi:https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin set size:2029 disposed:false
+15 silly idealTree buildDeps
+16 silly fetch manifest @tencent-weixin/openclaw-weixin@2.1.1
+17 silly packumentCache full:https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin cache-miss
+18 http fetch GET 200 https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin 120ms (cache miss)
+19 silly packumentCache full:https://registry.npmmirror.com/@tencent-weixin%2fopenclaw-weixin set size:6772 disposed:false
+20 silly placeDep ROOT @tencent-weixin/openclaw-weixin@2.1.1 OK for:  want: 2.1.1
+21 silly fetch manifest qrcode-terminal@0.12.0
+22 silly packumentCache full:https://registry.npmmirror.com/qrcode-terminal cache-miss
+23 silly fetch manifest zod@4.3.6
+24 silly packumentCache full:https://registry.npmmirror.com/zod cache-miss
+25 http fetch GET 200 https://registry.npmmirror.com/qrcode-terminal 102ms (cache miss)
+26 silly packumentCache full:https://registry.npmmirror.com/qrcode-terminal set size:5485 disposed:false
+27 http fetch GET 200 https://registry.npmmirror.com/zod 404ms (cache miss)
+28 silly packumentCache full:https://registry.npmmirror.com/zod set size:424625 disposed:false
+29 silly placeDep node_modules/@tencent-weixin/openclaw-weixin qrcode-terminal@0.12.0 OK for: @tencent-weixin/openclaw-weixin@2.1.1 want: 0.12.0
+30 silly placeDep node_modules/@tencent-weixin/openclaw-weixin zod@4.3.6 OK for: @tencent-weixin/openclaw-weixin@2.1.1 want: 4.3.6
+31 silly reify moves {}
+32 http cache @tencent-weixin/openclaw-weixin@https://registry.npmmirror.com/@tencent-weixin/openclaw-weixin/-/openclaw-weixin-2.1.1.tgz 0ms (cache hit)
+33 http cache zod@https://registry.npmmirror.com/zod/-/zod-4.3.6.tgz 0ms (cache hit)
+34 http cache qrcode-terminal@https://registry.npmmirror.com/qrcode-terminal/-/qrcode-terminal-0.12.0.tgz 0ms (cache hit)
+35 silly tarball no local data for @tencent-weixin/openclaw-weixin@https://registry.npmmirror.com/@tencent-weixin/openclaw-weixin/-/openclaw-weixin-2.1.1.tgz. Extracting by manifest.
+36 silly tarball no local data for zod@https://registry.npmmirror.com/zod/-/zod-4.3.6.tgz. Extracting by manifest.
+37 silly tarball no local data for qrcode-terminal@https://registry.npmmirror.com/qrcode-terminal/-/qrcode-terminal-0.12.0.tgz. Extracting by manifest.
+38 http fetch GET 200 https://cdn.npmmirror.com/packages/%40tencent-weixin/openclaw-weixin/2.1.1/openclaw-weixin-2.1.1.tgz 482ms (cache miss)
+39 http fetch GET 200 https://cdn.npmmirror.com/packages/qrcode-terminal/0.12.0/qrcode-terminal-0.12.0.tgz 607ms (cache miss)
+40 http fetch GET 200 https://cdn.npmmirror.com/packages/zod/4.3.6/zod-4.3.6.tgz 767ms (cache miss)
+41 silly ADD node_modules/@tencent-weixin/openclaw-weixin
+42 silly ADD node_modules/@tencent-weixin/openclaw-weixin/node_modules/zod
+43 silly ADD node_modules/@tencent-weixin/openclaw-weixin/node_modules/qrcode-terminal
+44 verbose cwd /Users/gudong/.openclaw/workspace-coder
+45 verbose os Darwin 24.6.0
+46 verbose node v22.22.0
+47 verbose npm  v10.9.4
+48 verbose exit 0
+49 info ok

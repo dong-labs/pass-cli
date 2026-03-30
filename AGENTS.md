@@ -43,7 +43,7 @@ git clone <你的仓库>
 - **规范文档**：`docs/CLI-Development-Standards.md`
 - **项目代码**：`repos/dong-labs/`
 - **GitHub**：https://github.com/dong-labs
-- **数据库**：`~/.dong/*.db`
+- **数据库**：`~/.dong/xxx/xxx.db`
 
 ### 命名规范
 
@@ -54,7 +54,7 @@ git clone <你的仓库>
 | **PyPI 包名** | `dong-xxx` | dong-log, dong-read |
 | **CLI 命令** | `dong-xxx` | dong-log, dong-read |
 | **Python 模块** | `xxx` | import log, import read |
-| **数据库** | `xxx.db` | log.db, read.db |
+| **数据库** | `~/.dong/xxx/xxx.db` | ~/.dong/log/log.db, ~/.dong/read/read.db |
 
 ### 核心依赖
 

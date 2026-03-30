@@ -3,7 +3,7 @@
 from dong.db import SchemaManager
 from .connection import MemberDatabase
 
-SCHEMA_VERSION = "1.2.0"
+SCHEMA_VERSION = "1.3.0"
 
 
 class MemberSchemaManager(SchemaManager):
@@ -38,6 +38,9 @@ class MemberSchemaManager(SchemaManager):
                     currency TEXT DEFAULT 'CNY',
                     status TEXT DEFAULT 'active',
                     source TEXT,
+                    region TEXT,
+                    job TEXT,
+                    tech_level TEXT,
                     notes TEXT,
                     created_at TEXT DEFAULT CURRENT_TIMESTAMP,
                     updated_at TEXT DEFAULT CURRENT_TIMESTAMP
@@ -67,6 +70,20 @@ class MemberSchemaManager(SchemaManager):
             cur.execute("CREATE INDEX IF NOT EXISTS idx_members_wechat ON members(wechat)")
             cur.execute("CREATE INDEX IF NOT EXISTS idx_members_account ON members(account_id)")
             cur.execute("CREATE INDEX IF NOT EXISTS idx_members_project ON members(project)")
+    
+    def migrate_to_1_3_0(self) -> None:
+        """迁移到 1.3.0：添加 region/job/tech_level 字段"""
+        with MemberDatabase.get_cursor() as cur:
+            # 检查字段是否已存在
+            cur.execute("PRAGMA table_info(members)")
+            columns = [row[1] for row in cur.fetchall()]
+            
+            if 'region' not in columns:
+                cur.execute("ALTER TABLE members ADD COLUMN region TEXT")
+            if 'job' not in columns:
+                cur.execute("ALTER TABLE members ADD COLUMN job TEXT")
+            if 'tech_level' not in columns:
+                cur.execute("ALTER TABLE members ADD COLUMN tech_level TEXT")
 
 
 def init_database():
